@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  @apply text-white;
+  font-family: 'Roboto', sans-serif;
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=text], input[type=email], input[type=password], textarea, select {
+  @apply rounded-full bg-veryDarkGrey focus:outline-none px-4 py-3 border border-borderColor block w-full
+}
+
+input[type=file] {
+  @apply block w-full text-[#afafaf] max-w-[230px] file:bg-transparent file:border-2 file:rounded-xl file:bg-white file:hover:text-white file:hover:bg-darkPurple file:text-darkPurple file:border-darkPurple file:px-3 file:py-1.5 file:transition-all file:duration-300 file:cursor-pointer file:text-sm file:font-semibold file:mr-2 file:border-solid
+}
+
+label {
+  @apply tracking-wide mx-2
+}
+
+nav#navbar {
+  @apply  transition-all duration-100 ease-out
+}
+
+nav#navbar.not-fixed {
+  @apply lg:rounded-full lg:absolute lg:top-8 lg:mx-3
+}
+
+nav#navbar ul {
+  @apply absolute top-[80px] left-[10%] bg-white w-4/5 text-center sm:top-[90px] md:left-[calc(50%-300px)] md:w-[600px] lg:px-6 lg:static lg:space-x-5 lg:w-auto
+}
+
+nav#navbar ul li {
+ @apply border-t border-[#eee] lg:border-t-0
+}
+
+nav#navbar ul a {
+  @apply block px-4 py-3.5 tracking-wider text-sm text-black hover:text-darkPurple lg:py-2 lg:text-base lg:hover:bg-darkPurple lg:hover:text-white lg:hover:rounded-full lg:tracking-wide transition-all duration-300;
+}
+
+nav#navbar ul a.active {
+  @apply text-darkPurple lg:bg-darkPurple lg:text-white lg:rounded-full;
+}
+
+.hero-breadcrumbs > a:last-child {
+  @apply text-darkPurple
+}
+
+.btn {
+  @apply relative overflow-hidden py-3.5 px-7 rounded-full bg-darkPurple text-center hover:bg-white hover:text-darkPurple transition-all duration-300
+}
+
+.btn::after {
+  width: calc(100% - 40px);
+  @apply content-[''] absolute bottom-0 left-5 h-0.5 bg-white;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  @apply  bg-white text-darkPurple p-6 rounded-full hover:bg-darkPurple hover:!text-white transition-all duration-300
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  @apply text-xs font-extrabold
+}
+
+.hamburger {
+  @apply cursor-pointer w-8 h-8 px-4 relative block lg:hidden
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  @apply absolute top-2 left-1 w-6 h-0.5 bg-black rotate-0 transition-all
+}
+
+.hamburger-middle {
+  @apply translate-y-[7px]
+}
+
+.hamburger-bottom {
+  @apply translate-y-[14px]
+}
+
+.open {
+  @apply rotate-90 translate-y-0
+}
+
+.open .hamburger-top {
+  transform: translate(6px);
+  @apply rotate-45 translate-y-1.5
+}
+
+.open .hamburger-middle {
+  @apply hidden
+}
+
+.open .hamburger-bottom {
+  transform: translate(-6px);
+  @apply -rotate-45 translate-y-1.5
+}
+
+.section-header {
+  @apply text-center text-4xl font-medium relative
+}
+
+.section-header::after {
+  @apply content-[''] absolute w-32 h-0.5 -top-7 left-[calc(50%-64px)] bg-darkPurple
+}
+
+section.bg-brightPink .section-header::after {
+  @apply bg-white
+}
+
+section .flex .section-header {
+  @apply lg:text-left
+}
+
+section .flex .section-header::after {
+  @apply lg:left-0
+}
+
+.section-header h2 {
+  @apply font-bold text-3xl
+}
+
+.section-header span {
+  @apply text-darkPurple
+}
+
+.category svg {
+  @apply w-9 h-9 fill-lightPurple
+}
+
+#current-items button {
+  @apply text-sm py-2 px-4 rounded-full text-center hover:bg-darkPurple capitalize border border-darkPurple transition-all duration-300
+}
+
+#current-items button.current {
+ @apply bg-darkPurple
+}
+
+@media (max-width: 359px) {
+  .items-wrapper {
+    @apply flex-wrap
+  }
+
+  .items-wrapper > div:last-child {
+    @apply flex-grow
+  }
+}
+
+@media (max-width: 400px) {
+  #explore-slider {
+    @apply -mb-[250px]
+  }
+  #explore-items {
+    @apply pt-[280px]
+  }
+}
+
+.author-list > div:nth-last-child(2) {
+  @apply border-b-0
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px 12px;
+}
+
+select option {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.author-image {
+  @apply w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] md:w-[150px] md:h-[150px] lg:w-[170px] lg:h-[170px]
+}
+
+.item-image {
+  @apply  w-[300px] h-[300px] mx-auto rounded-3xl sm:w-full sm:h-[210px] md:h-[306px] lg:h-[172px] xl:h-[224px]
+}
+
+@media (max-width: 349px) {
+  .author-image {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 320px) {
+  .item-image {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+@media (max-width: 360px) {
+  .item-image-x {
+    width: 240px;
+    height: 240px;
+  }
+}
