@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 
-@section('title', $category->cat_name . ' - NFTsGo')
+@section('title', $category->cat_name . ' - Liberty NFT Market')
 
 @section('content')
 

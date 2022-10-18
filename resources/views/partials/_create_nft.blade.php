@@ -1,4 +1,4 @@
-<section id="create-nft" class="bg-brightPink py-24">
+<section id="create-nft" class=" bg-gradient-to-b from-violet-500 to-fuchsia-500 py-24">
   <div class="container">
     <div class="space-y-14">
       <div class="flex flex-wrap gap-y-8 justify-center lg:justify-between">

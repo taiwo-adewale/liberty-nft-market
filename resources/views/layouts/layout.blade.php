@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="{{ asset('css/main.css') }}">
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <title>
-    @yield('title', 'NFTsGo')
+    @yield('title', 'Liberty NFT Market')
   </title>
 </head>
 <body>
@@ -19,7 +19,7 @@
       <nav id="navbar" class="bg-white fixed left-0 right-0 min-h-[80px] not-fixed shadow">
         <div class="flex flex-grow justify-between items-center py-3 px-4 lg:container">
           <a href="{{ route('home.index') }}" class="w-[160px] sm:w-auto">
-            <img src="{{ asset('images/logo.png') }}" alt="nftsgo logo">
+            <img src="{{ asset('images/logo.png') }}" alt="liberty logo">
           </a>
   
           <ul id="nav-menu" class="hidden lg:flex">
@@ -48,10 +48,10 @@
 
   @yield('content')
 
-  <footer class="bg-brightPink">
+  <footer class="bg-brightPink border-t border-t-[rgba(255,255,255,0.2)]">
     <div class="container">
       <div class="flex flex-wrap text-[15px] py-6 justify-center text-center gap-x-4 gap-y-1">
-        <p>Copyright &copy; 2022 NFTsGo NFT Marketplace Co. Ltd</p>
+        <p>Copyright &copy; 2022 Liberty NFT Marketplace Co. Ltd</p>
         <p>All rights reserved.</p>
         <p>Designed by Wale</p>
       </div>

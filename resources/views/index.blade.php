@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 
-@section('title', 'Home - NFTsGo')
+@section('title', 'Home - Liberty NFT Market')
 
 @push('swiper_js')
   <script src="{{ asset('vendor/swiper/swiper.js') }}"></script>
@@ -19,11 +19,11 @@
 @endpush
 
 @section('content')
-  <section id="hero" class="pt-40 pb-20 bg-brightPink md:pt-48 md:pb-28 lg:pt-60 lg:pb-36">
+  <section id="hero" class="home-hero pt-40 pb-20 bg-brightPink md:pt-48 md:pb-28 lg:pt-60 lg:pb-36" style="background-image: url({{ asset('images/homeHero.jpg') }})">
     <div class="container">
       <div class="flex flex-col gap-y-20 md:gap-y-32 lg:gap-y-0 lg:flex-row lg:justify-between">
         <div class="lg:w-1/2 lg:self-center">
-          <h3 class="text-xl mb-2">NFTsGo NFT Market</h3>
+          <h3 class="text-xl mb-2">Liberty NFT Market</h3>
           <h2 class="uppercase font-bold text-5xl leading-snug mb-7">Create, Sell & Collect Top NFT’s.</h2>
           <p class="leading-7 mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente unde provident corrupti, illum asperiores totam rerum voluptas fugiat reprehenderit, accusantium dolor consequatur nesciunt non dicta pariatur officia? Facilis, soluta necessitatibus impedit illum id ratione maxime perferendis repellat.</p>
           <div class="flex flex-wrap justify-center gap-3 sm:justify-start md:gap-5">

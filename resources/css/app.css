@@ -44,7 +44,7 @@ nav#navbar ul {
 }
 
 nav#navbar ul li {
- @apply border-t border-[#eee] lg:border-t-0
+  @apply border-t border-[#eee] lg:border-t-0
 }
 
 nav#navbar ul a {
@@ -53,6 +53,10 @@ nav#navbar ul a {
 
 nav#navbar ul a.active {
   @apply text-darkPurple lg:bg-darkPurple lg:text-white lg:rounded-full;
+}
+
+.home-hero {
+  @apply bg-cover bg-no-repeat
 }
 
 .hero-breadcrumbs > a:last-child {
@@ -149,7 +153,7 @@ section .flex .section-header::after {
 }
 
 #current-items button.current {
- @apply bg-darkPurple
+  @apply bg-darkPurple
 }
 
 @media (max-width: 359px) {

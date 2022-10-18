@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 
-@section('title', 'Reset Password - NFTsGo')
+@section('title', 'Reset Password - Liberty NFT Market')
 
 @section('content')
   <main>

@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 
-@section('title', 'Explore - NFTsGo')
+@section('title', 'Explore - Liberty NFT Market')
 
 @push('swiper_js')
   <script src="{{ asset('vendor/swiper/swiper.js') }}"></script>
